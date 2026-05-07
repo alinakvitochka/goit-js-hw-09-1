@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/goit-js-hw-09-1/favicon.svg" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanilla App Template</title>
-  <script type="module" crossorigin src="/goit-js-hw-09-1/assets/styles-BKJWdQEH.js"></script>
+  <title>Page 3</title>
+  <script type="module" crossorigin src="/goit-js-hw-09-1/2-form.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-09-1/assets/styles-BKJWdQEH.js">
   <link rel="stylesheet" crossorigin href="/goit-js-hw-09-1/assets/styles-BsfeZJ1D.css">
 </head>
 
@@ -24,7 +25,7 @@
           <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+          <a class="nav-link active" href="./page-3.html">Page 3</a>
         </li>
       </ul>
     </nav>
@@ -33,10 +34,24 @@
 
 
   <main>
-    <ul>
-      <li><a href="./1-gallery.html">Gallery</a></li>
-      <li><a href="./2-form.html">Form</a></li>
-    </ul>
+    <div class="container">
+      <form class="feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <a class="back-link" href="./index.html">Go back</a>
+
+    </div>
   </main>
 
   <footer class="footer">
@@ -54,7 +69,6 @@
     </p>
   </div>
 </footer>
-
 
 </body>
 
